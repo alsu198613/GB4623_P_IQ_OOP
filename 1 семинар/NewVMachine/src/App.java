@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Domen.Bottle;
+import Domen.HotDrink;
 import Domen.Product;
 import Services.CoinDispenser;
 import Services.Holder;
@@ -14,10 +15,17 @@ public class App {
         Product item1 = new Product("Lays", 100);
         Product item2 = new Product("cola", 50);
         Product item3 = new Bottle("Mineral water", 101, 1.5);
+        Product item4 = new HotDrink("Coffe", 40, 40);
+        Product item5 = new HotDrink("Black tea", 25, 40);
+        Product item6 = new HotDrink("Mulled vine", 150, 35);
 
         assort.add(item1);
         assort.add(item2);
         assort.add(item3);
+        assort.add(item4);
+        assort.add(item5);
+        assort.add(item6);
+        
 
         Holder hold1 = new Holder(10, 10);
         CoinDispenser disp = new CoinDispenser(120);
